@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/ASCII_encryptor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xor_encrypt'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/top_ed_system.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encryption_system'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encryption_system_tb'

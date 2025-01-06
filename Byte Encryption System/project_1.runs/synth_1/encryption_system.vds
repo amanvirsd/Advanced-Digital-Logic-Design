@@ -1,0 +1,302 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct  7 19:02:30 2024
+# Process ID: 1236
+# Current directory: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log encryption_system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source encryption_system.tcl
+# Log file: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/synth_1/encryption_system.vds
+# Journal file: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source encryption_system.tcl -notrace
+Command: synth_design -top encryption_system -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4180 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 676.918 ; gain = 175.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'encryption_system' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/top_ed_system.vhd:12]
+INFO: [Synth 8-3491] module 'ascii_comparator' declared at 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/comparator.vhd:4' bound to instance 'comparator' of component 'ascii_comparator' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/top_ed_system.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'ascii_comparator' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/comparator.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ascii_comparator' (1#1) [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/comparator.vhd:12]
+INFO: [Synth 8-3491] module 'barrel_shifter' declared at 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/Barrel_shifter_ZL.vhd:5' bound to instance 'pre_encrypt_shift' of component 'barrel_shifter' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/top_ed_system.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'barrel_shifter' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/Barrel_shifter_ZL.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'barrel_shifter' (2#1) [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/Barrel_shifter_ZL.vhd:14]
+INFO: [Synth 8-3491] module 'xor_encrypt' declared at 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/ASCII_encryptor.vhd:6' bound to instance 'encryptor' of component 'xor_encrypt' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/top_ed_system.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'xor_encrypt' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/ASCII_encryptor.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'xor_encrypt' (3#1) [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/ASCII_encryptor.vhd:15]
+INFO: [Synth 8-3491] module 'xor_decrypt' declared at 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/ASCII_decryptor.vhd:29' bound to instance 'decryptor' of component 'xor_decrypt' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/top_ed_system.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'xor_decrypt' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/ASCII_decryptor.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'xor_decrypt' (4#1) [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/ASCII_decryptor.vhd:38]
+INFO: [Synth 8-3491] module 'barrel_shifter' declared at 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/Barrel_shifter_ZL.vhd:5' bound to instance 'post_decrypt_shift' of component 'barrel_shifter' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/top_ed_system.vhd:93]
+INFO: [Synth 8-3491] module 'case_converter' declared at 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/upper-lower_case_ZL.vhd:4' bound to instance 'converter' of component 'case_converter' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/top_ed_system.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'case_converter' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/upper-lower_case_ZL.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'case_converter' (5#1) [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/upper-lower_case_ZL.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'encryption_system' (6#1) [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/top_ed_system.vhd:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 741.523 ; gain = 239.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 741.523 ; gain = 239.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 741.523 ; gain = 239.688
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/constrs_1/new/lab1_constraint.xdc]
+Finished Parsing XDC File [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/constrs_1/new/lab1_constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/constrs_1/new/lab1_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/encryption_system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/encryption_system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 834.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 834.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 834.723 ; gain = 332.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 834.723 ; gain = 332.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 834.723 ; gain = 332.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 834.723 ; gain = 332.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 5     
+	   3 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ascii_comparator 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module barrel_shifter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module xor_encrypt 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module xor_decrypt 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module case_converter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design encryption_system has port led_out[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 834.723 ; gain = 332.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 838.699 ; gain = 336.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 838.699 ; gain = 336.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 848.668 ; gain = 346.832
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 863.508 ; gain = 361.672
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 863.508 ; gain = 361.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 863.508 ; gain = 361.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 863.508 ; gain = 361.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 863.508 ; gain = 361.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 863.508 ; gain = 361.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     1|
+|2     |LUT6 |     7|
+|3     |IBUF |     8|
+|4     |OBUF |    11|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    27|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 863.508 ; gain = 361.672
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 863.508 ; gain = 268.473
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 863.508 ; gain = 361.672
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 883.598 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 883.598 ; gain = 594.102
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 883.598 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/synth_1/encryption_system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file encryption_system_utilization_synth.rpt -pb encryption_system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  7 19:03:02 2024...

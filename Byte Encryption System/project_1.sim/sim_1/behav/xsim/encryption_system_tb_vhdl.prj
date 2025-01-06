@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/new/ASCII_decryptor.vhd" \
+"../../../../project_1.srcs/sources_1/new/ASCII_encryptor.vhd" \
+"../../../../project_1.srcs/sources_1/new/Barrel_shifter_ZL.vhd" \
+"../../../../project_1.srcs/sources_1/new/comparator.vhd" \
+"../../../../project_1.srcs/sources_1/new/top_ed_system.vhd" \
+"../../../../project_1.srcs/sources_1/new/upper-lower_case_ZL.vhd" \
+"../../../../project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd" \
+
+# Do not sort compile order
+nosort

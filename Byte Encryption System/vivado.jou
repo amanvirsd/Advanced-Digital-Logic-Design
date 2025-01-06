@@ -1,0 +1,133 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct  7 14:12:14 2024
+# Process ID: 7108
+# Current directory: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11384 C:\Users\zhiyua15\Downloads\Final_lab1_AD_ZL.xpr\project_7\project_7.xpr
+# Log file: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/vivado.log
+# Journal file: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.xpr
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top barrel_shifter_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top barrel_shifter [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source barrel_shifter_tb.tcl
+close_sim
+launch_simulation
+source barrel_shifter_tb.tcl
+close_sim
+launch_simulation
+source barrel_shifter_tb.tcl
+close_sim
+launch_simulation
+source barrel_shifter_tb.tcl
+close_sim
+launch_simulation
+source barrel_shifter_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top encryption_system_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top encryption_system [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+close_sim
+launch_simulation
+launch_simulation
+reset_run synth_1
+launch_simulation
+save_project_as project_1 C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1 -force
+launch_simulation
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+source encryption_system_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top barrel_shifter_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design
+launch_simulation
+close_sim
+launch_simulation
+source barrel_shifter_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_encrypt_decrypt_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top encryption_system_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source encryption_system_tb.tcl
+archive_project C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/ECE410_Lab1_final_AD_ZL.xpr.zip -temp_dir C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/.Xil/Vivado-7108-e5-001-w24 -force -include_local_ip_cache -include_config_settings
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/impl_1/encryption_system.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/impl_1/encryption_system.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+archive_project C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/FINALFINALFIANL.xpr.zip -temp_dir C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/.Xil/Vivado-7108-e5-001-w24 -force -include_local_ip_cache -include_config_settings

@@ -1,0 +1,962 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct  7 14:12:14 2024
+# Process ID: 7108
+# Current directory: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11384 C:\Users\zhiyua15\Downloads\Final_lab1_AD_ZL.xpr\project_7\project_7.xpr
+# Log file: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/vivado.log
+# Journal file: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/zhiyua15/AppData/Local/Temp/.Xil_zhiyua15/Vivado-11720-e5-001-w08/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 685.832 ; gain = 33.152
+set_property top barrel_shifter_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top barrel_shifter [current_fileset]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'barrel_shifter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj barrel_shifter_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/ASCII_decryptor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xor_decrypt'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/ASCII_encryptor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xor_encrypt'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/Barrel_shifter_ZL.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'barrel_shifter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ascii_comparator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/upper-lower_case_ZL.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'case_converter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/top_ed_system.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encryption_system'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/wrap_encrypt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_encrypt_decrypt'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_wrapper_encrypt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_encrypt_decrypt_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'barrel_shifter_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ascii_comparator_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_converter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'case_converter_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_encrypt_decrypt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encryption_system_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/test_bench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encryption_system'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'encryption_system' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/test_bench.vhd:6]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xelab -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot barrel_shifter_tb_behav xil_defaultlib.barrel_shifter_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot barrel_shifter_tb_behav xil_defaultlib.barrel_shifter_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shifter [barrel_shifter_default]
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shifter_tb
+Built simulation snapshot barrel_shifter_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim/xsim.dir/barrel_shifter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct  7 14:19:17 2024...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 713.512 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "barrel_shifter_tb_behav -key {Behavioral:sim_1:Functional:barrel_shifter_tb} -tclbatch {barrel_shifter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source barrel_shifter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test Case 2 Failed: Shift Left by 1
+Time: 20 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+Error: Test Case 3 Failed: Shift Left by 2
+Time: 30 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+ERROR: Index -1 out of bound 7 downto 0
+Time: 50 ns  Iteration: 1  Process: /barrel_shifter_tb/uut/line__16
+  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/Barrel_shifter_ZL.vhd
+
+HDL Line: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/Barrel_shifter_ZL.vhd:25
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'barrel_shifter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 730.672 ; gain = 17.160
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'barrel_shifter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj barrel_shifter_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'barrel_shifter_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xelab -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot barrel_shifter_tb_behav xil_defaultlib.barrel_shifter_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot barrel_shifter_tb_behav xil_defaultlib.barrel_shifter_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shifter [barrel_shifter_default]
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shifter_tb
+Built simulation snapshot barrel_shifter_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "barrel_shifter_tb_behav -key {Behavioral:sim_1:Functional:barrel_shifter_tb} -tclbatch {barrel_shifter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source barrel_shifter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test Case 2 Failed: Shift Left by 1
+Time: 20 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+Error: Test Case 3 Failed: Shift Left by 2
+Time: 30 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+ERROR: Index -1 out of bound 7 downto 0
+Time: 50 ns  Iteration: 1  Process: /barrel_shifter_tb/uut/line__16
+  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/Barrel_shifter_ZL.vhd
+
+HDL Line: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/Barrel_shifter_ZL.vhd:25
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'barrel_shifter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 744.914 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'barrel_shifter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj barrel_shifter_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'barrel_shifter_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xelab -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot barrel_shifter_tb_behav xil_defaultlib.barrel_shifter_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot barrel_shifter_tb_behav xil_defaultlib.barrel_shifter_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shifter [barrel_shifter_default]
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shifter_tb
+Built simulation snapshot barrel_shifter_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "barrel_shifter_tb_behav -key {Behavioral:sim_1:Functional:barrel_shifter_tb} -tclbatch {barrel_shifter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source barrel_shifter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test Case 2 Failed: Shift Left by 1
+Time: 20 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+Error: Test Case 3 Failed: Shift Left by 2
+Time: 30 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+ERROR: Index -1 out of bound 7 downto 0
+Time: 50 ns  Iteration: 1  Process: /barrel_shifter_tb/uut/line__16
+  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/Barrel_shifter_ZL.vhd
+
+HDL Line: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/Barrel_shifter_ZL.vhd:25
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'barrel_shifter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 744.914 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'barrel_shifter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj barrel_shifter_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/Barrel_shifter_ZL.vhd" into library xil_defaultlib
+WARNING: [VRFC 10-3608] overwriting existing secondary unit 'behavioral' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/Barrel_shifter_ZL.vhd:1]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xelab -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot barrel_shifter_tb_behav xil_defaultlib.barrel_shifter_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot barrel_shifter_tb_behav xil_defaultlib.barrel_shifter_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "barrel_shifter_tb_behav -key {Behavioral:sim_1:Functional:barrel_shifter_tb} -tclbatch {barrel_shifter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source barrel_shifter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test Case 2 Failed: Shift Left by 1
+Time: 20 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+Error: Test Case 3 Failed: Shift Left by 2
+Time: 30 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+ERROR: Index -1 out of bound 7 downto 0
+Time: 50 ns  Iteration: 1  Process: /barrel_shifter_tb/uut/line__16
+  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/Barrel_shifter_ZL.vhd
+
+HDL Line: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/Barrel_shifter_ZL.vhd:25
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'barrel_shifter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 744.914 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'barrel_shifter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj barrel_shifter_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sources_1/new/Barrel_shifter_ZL.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'barrel_shifter'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xelab -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot barrel_shifter_tb_behav xil_defaultlib.barrel_shifter_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot barrel_shifter_tb_behav xil_defaultlib.barrel_shifter_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shifter [barrel_shifter_default]
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shifter_tb
+Built simulation snapshot barrel_shifter_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "barrel_shifter_tb_behav -key {Behavioral:sim_1:Functional:barrel_shifter_tb} -tclbatch {barrel_shifter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source barrel_shifter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test Case 3 Failed: Shift Left by 2
+Time: 30 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+Error: Test Case 6 Failed: Shift Left by 5
+Time: 60 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+Error: Test Case 7 Failed: Shift Left by 6
+Time: 70 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+Error: Test Case 21 Failed: Maximum Shift Left by 7
+Time: 210 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+Error: Test Case 22 Failed: Maximum Shift Right by 7
+Time: 220 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+Note: All test cases completed successfully.
+Time: 260 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_barrel_shifter.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'barrel_shifter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 745.004 ; gain = 0.090
+set_property top encryption_system_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top encryption_system [current_fileset]
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encryption_system_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj encryption_system_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xelab -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot encryption_system_tb_behav xil_defaultlib.encryption_system_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot encryption_system_tb_behav xil_defaultlib.encryption_system_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <ascii_in> does not exist in entity <encryption_system>.  Please compare the definition of block <encryption_system> to its component declaration and its instantion to detect the mismatch. [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_encrypt_decrypt.vhd:12]
+ERROR: [VRFC 10-718] formal port <led_out> does not exist in entity <encryption_system>.  Please compare the definition of block <encryption_system> to its component declaration and its instantion to detect the mismatch. [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_encrypt_decrypt.vhd:13]
+ERROR: [VRFC 10-718] formal port <final_output> does not exist in entity <encryption_system>.  Please compare the definition of block <encryption_system> to its component declaration and its instantion to detect the mismatch. [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_encrypt_decrypt.vhd:14]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit encryption_system_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encryption_system_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj encryption_system_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xelab -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot encryption_system_tb_behav xil_defaultlib.encryption_system_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot encryption_system_tb_behav xil_defaultlib.encryption_system_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <ascii_in> does not exist in entity <encryption_system>.  Please compare the definition of block <encryption_system> to its component declaration and its instantion to detect the mismatch. [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_encrypt_decrypt.vhd:12]
+ERROR: [VRFC 10-718] formal port <led_out> does not exist in entity <encryption_system>.  Please compare the definition of block <encryption_system> to its component declaration and its instantion to detect the mismatch. [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_encrypt_decrypt.vhd:13]
+ERROR: [VRFC 10-718] formal port <final_output> does not exist in entity <encryption_system>.  Please compare the definition of block <encryption_system> to its component declaration and its instantion to detect the mismatch. [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_encrypt_decrypt.vhd:14]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit encryption_system_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encryption_system_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj encryption_system_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_encrypt_decrypt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encryption_system_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim'
+"xelab -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot encryption_system_tb_behav xil_defaultlib.encryption_system_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 893da0ca3002436cbe5efe50fe025719 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot encryption_system_tb_behav xil_defaultlib.encryption_system_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <ascii_in> does not exist in entity <encryption_system>.  Please compare the definition of block <encryption_system> to its component declaration and its instantion to detect the mismatch. [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_encrypt_decrypt.vhd:12]
+ERROR: [VRFC 10-718] formal port <led_out> does not exist in entity <encryption_system>.  Please compare the definition of block <encryption_system> to its component declaration and its instantion to detect the mismatch. [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_encrypt_decrypt.vhd:13]
+ERROR: [VRFC 10-718] formal port <final_output> does not exist in entity <encryption_system>.  Please compare the definition of block <encryption_system> to its component declaration and its instantion to detect the mismatch. [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.srcs/sim_1/new/tb_encrypt_decrypt.vhd:14]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit encryption_system_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/project_7.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+save_project_as project_1 C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1 -force
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encryption_system_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj encryption_system_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/ASCII_decryptor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xor_decrypt'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/ASCII_encryptor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xor_encrypt'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/Barrel_shifter_ZL.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'barrel_shifter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ascii_comparator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/upper-lower_case_ZL.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'case_converter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/top_ed_system.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encryption_system'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/wrap_encrypt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_encrypt_decrypt'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_wrapper_encrypt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_encrypt_decrypt_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_barrel_shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'barrel_shifter_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ascii_comparator_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_converter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'case_converter_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encryption_system_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/test_bench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encryption_system'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'encryption_system' [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/test_bench.vhd:6]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto cb114c29c75e428390ab78842ce33716 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot encryption_system_tb_behav xil_defaultlib.encryption_system_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto cb114c29c75e428390ab78842ce33716 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot encryption_system_tb_behav xil_defaultlib.encryption_system_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <ascii_in> does not exist in entity <encryption_system>.  Please compare the definition of block <encryption_system> to its component declaration and its instantion to detect the mismatch. [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd:12]
+ERROR: [VRFC 10-718] formal port <led_out> does not exist in entity <encryption_system>.  Please compare the definition of block <encryption_system> to its component declaration and its instantion to detect the mismatch. [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd:13]
+ERROR: [VRFC 10-718] formal port <final_output> does not exist in entity <encryption_system>.  Please compare the definition of block <encryption_system> to its component declaration and its instantion to detect the mismatch. [C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd:14]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit encryption_system_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encryption_system_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj encryption_system_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/top_ed_system.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encryption_system'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encryption_system_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto cb114c29c75e428390ab78842ce33716 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot encryption_system_tb_behav xil_defaultlib.encryption_system_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto cb114c29c75e428390ab78842ce33716 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot encryption_system_tb_behav xil_defaultlib.encryption_system_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ascii_comparator [ascii_comparator_default]
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shifter [barrel_shifter_default]
+Compiling architecture behavioral of entity xil_defaultlib.xor_encrypt [xor_encrypt_default]
+Compiling architecture behavioral of entity xil_defaultlib.xor_decrypt [xor_decrypt_default]
+Compiling architecture behavioral of entity xil_defaultlib.case_converter [case_converter_default]
+Compiling architecture behavioral of entity xil_defaultlib.encryption_system [encryption_system_default]
+Compiling architecture behavioral of entity xil_defaultlib.encryption_system_tb
+Built simulation snapshot encryption_system_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/encryption_system_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct  7 18:29:06 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "encryption_system_tb_behav -key {Behavioral:sim_1:Functional:encryption_system_tb} -tclbatch {encryption_system_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source encryption_system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test Case 2: Input 'z' failed
+Time: 20 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 4: Input 'n' failed
+Time: 40 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 6: Input 'y' failed
+Time: 60 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 8: Input 'x' failed
+Time: 80 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 10: Input 'w' failed
+Time: 100 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 12: Input 'v' failed
+Time: 120 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 14: Input 'u' failed
+Time: 140 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 16: Input 't' failed
+Time: 160 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 18: Input 's' failed
+Time: 180 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 20: Input 'r' failed
+Time: 200 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 22: Input 'q' failed
+Time: 220 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 24: Input 'p' failed
+Time: 240 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 26: Input 'o' failed
+Time: 260 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 27: Input 'm' failed
+Time: 270 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 29: Input 'l' failed
+Time: 290 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Note: All tests passed successfully.
+Time: 300 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'encryption_system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 915.180 ; gain = 0.000
+set_property top barrel_shifter_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Oct  7 18:30:16 2024] Launched synth_1...
+Run output will be captured here: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/synth_1/runme.log
+[Mon Oct  7 18:30:16 2024] Launched impl_1...
+Run output will be captured here: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Oct  7 18:32:50 2024] Launched synth_1...
+Run output will be captured here: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/synth_1/runme.log
+[Mon Oct  7 18:32:50 2024] Launched impl_1...
+Run output will be captured here: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Oct  7 18:36:35 2024] Launched synth_1...
+Run output will be captured here: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Oct  7 18:37:15 2024] Launched impl_1...
+Run output will be captured here: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Oct  7 18:38:11 2024] Launched impl_1...
+Run output will be captured here: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Oct  7 18:41:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1915.277 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1915.277 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1915.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 1932.984 ; gain = 236.758
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Mon Oct  7 18:46:35 2024] Launched synth_1...
+Run output will be captured here: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/synth_1/runme.log
+[Mon Oct  7 18:46:35 2024] Launched impl_1...
+Run output will be captured here: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/impl_1/runme.log
+close_design
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'barrel_shifter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj barrel_shifter_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto cb114c29c75e428390ab78842ce33716 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot barrel_shifter_tb_behav xil_defaultlib.barrel_shifter_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto cb114c29c75e428390ab78842ce33716 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot barrel_shifter_tb_behav xil_defaultlib.barrel_shifter_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shifter [barrel_shifter_default]
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shifter_tb
+Built simulation snapshot barrel_shifter_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/barrel_shifter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct  7 18:48:41 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "barrel_shifter_tb_behav -key {Behavioral:sim_1:Functional:barrel_shifter_tb} -tclbatch {barrel_shifter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source barrel_shifter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test Case 3 Failed: Shift Left by 2
+Time: 30 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_barrel_shifter.vhd
+Error: Test Case 6 Failed: Shift Left by 5
+Time: 60 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_barrel_shifter.vhd
+Error: Test Case 7 Failed: Shift Left by 6
+Time: 70 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_barrel_shifter.vhd
+Error: Test Case 21 Failed: Maximum Shift Left by 7
+Time: 210 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_barrel_shifter.vhd
+Error: Test Case 22 Failed: Maximum Shift Right by 7
+Time: 220 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_barrel_shifter.vhd
+Note: All test cases completed successfully.
+Time: 260 ns  Iteration: 0  Process: /barrel_shifter_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_barrel_shifter.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'barrel_shifter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 2188.320 ; gain = 0.000
+set_property top test_encrypt_decrypt_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top encryption_system_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encryption_system_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj encryption_system_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/ASCII_encryptor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xor_encrypt'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sources_1/new/top_ed_system.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encryption_system'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encryption_system_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto cb114c29c75e428390ab78842ce33716 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot encryption_system_tb_behav xil_defaultlib.encryption_system_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto cb114c29c75e428390ab78842ce33716 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot encryption_system_tb_behav xil_defaultlib.encryption_system_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ascii_comparator [ascii_comparator_default]
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shifter [barrel_shifter_default]
+Compiling architecture behavioral of entity xil_defaultlib.xor_encrypt [xor_encrypt_default]
+Compiling architecture behavioral of entity xil_defaultlib.xor_decrypt [xor_decrypt_default]
+Compiling architecture behavioral of entity xil_defaultlib.case_converter [case_converter_default]
+Compiling architecture behavioral of entity xil_defaultlib.encryption_system [encryption_system_default]
+Compiling architecture structural of entity xil_defaultlib.encryption_system_tb
+Built simulation snapshot encryption_system_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "encryption_system_tb_behav -key {Behavioral:sim_1:Functional:encryption_system_tb} -tclbatch {encryption_system_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source encryption_system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test Case 2: Input 'z' failed
+Time: 20 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 4: Input 'n' failed
+Time: 40 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 6: Input 'y' failed
+Time: 60 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 8: Input 'x' failed
+Time: 80 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 10: Input 'w' failed
+Time: 100 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 12: Input 'v' failed
+Time: 120 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 14: Input 'u' failed
+Time: 140 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 16: Input 't' failed
+Time: 160 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 18: Input 's' failed
+Time: 180 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 20: Input 'r' failed
+Time: 200 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 22: Input 'q' failed
+Time: 220 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 24: Input 'p' failed
+Time: 240 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 26: Input 'o' failed
+Time: 260 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 27: Input 'm' failed
+Time: 270 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Error: Test Case 29: Input 'l' failed
+Time: 290 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+Note: All tests passed successfully.
+Time: 300 ns  Iteration: 0  Process: /encryption_system_tb/stim_proc  File: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.srcs/sim_1/new/tb_encrypt_decrypt.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'encryption_system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2188.320 ; gain = 0.000
+archive_project C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/ECE410_Lab1_final_AD_ZL.xpr.zip -temp_dir C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/.Xil/Vivado-7108-e5-001-w24 -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/.Xil/Vivado-7108-e5-001-w24' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/.Xil/Vivado-7108-e5-001-w24/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/ECE410_Lab1_final_AD_ZL.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Oct  7 19:00:48 2024] Launched impl_1...
+Run output will be captured here: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Oct  7 19:02:27 2024] Launched synth_1...
+Run output will be captured here: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/synth_1/runme.log
+[Mon Oct  7 19:02:27 2024] Launched impl_1...
+Run output will be captured here: C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2188.320 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2188.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2188.320 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351A77C1CA
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3129.105 ; gain = 940.785
+set_property PROGRAM.FILE {C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/impl_1/encryption_system.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_1/project_1.runs/impl_1/encryption_system.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+archive_project C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/FINALFINALFIANL.xpr.zip -temp_dir C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/.Xil/Vivado-7108-e5-001-w24 -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/.Xil/Vivado-7108-e5-001-w24' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/zhiyua15/Downloads/Final_lab1_AD_ZL.xpr/project_7/.Xil/Vivado-7108-e5-001-w24/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
